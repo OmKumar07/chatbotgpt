@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@google/generative-ai": "^0.16.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "crypto-js": "^3.1.9-1",
     "dotenv": "^16.4.5",
+    "dotenv-webpack": "^8.1.0",
+    "ldbutton": "^2.0.4",
     "openai": "^4.54.0",
     "os-browserify": "^0.3.0",
     "path": "^0.12.7",
@@ -14,12 +18,16 @@
     "react": "^18.3.1",
     "react-app-rewired": "^2.2.1",
     "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
     "react-scripts": "5.0.1",
     "stream": "^0.0.3",
     "web-vitals": "^2.1.4"
   },
+  "browser": {
+    "crypto": false
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
